@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Library</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">One More Page</h1>
+          <p>Books for Heros</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+		  <select id="filter">
+			<option value="all">All</option>
+			<option value="fiction">Fiction</option>
+			<option value="nonfiction">Non-fiction</option>
+			</select>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+	    	<ul>
+	    		<li data-genre="fiction">
+	    			<span class="name">Name of the Wind</span>
+					<br><span class="rating">Rating
+						<input type="number" min="1" max="5" placeholder="Rate book" class="rating-input">
+					</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li data-genre="fiction">
+	    			<span class="name">The Wise Man's Fear</span>
+					<span class="rating"><br>Rating 
+						<input type="number" min="1" max="5" placeholder="Rate book" class="rating-input">
+					</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li data-genre="nonfiction">
+	    			<span class="name">Kafka on the Shore</span>
+					<span class="rating"><br>Rating
+						<input type="number" min="1" max="5" placeholder="Rate book" class="rating-input">
+					</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li data-genre="Nonfiction">
+	    			<span class="name">The Master and the Margarita</span>
+					<span class="rating"> <br>Rating
+						<input type="number" min="1" max="5" placeholder="Rate book" class="rating-input">
+					</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all books</label>
+	    	<input type="text" placeholder="Add a book..." />
+	    	<button>Add</button>
+	    </form>
+      
+    </div>
+  </body>
+</html>
